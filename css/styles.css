@@ -523,7 +523,7 @@ input[type='checkbox'] {
 	padding-bottom: 5.5rem;
 	background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../images/home-bg2.jpg') center center no-repeat;
 	background-size: cover;
-	text-align: center;
+	/* text-align: center; */
 }
 
 .header .h1-large {
@@ -532,7 +532,14 @@ input[type='checkbox'] {
 	position: absolute;
 }
 .btn-margin-custom{
-	margin-top: 60px;
+	margin-top: 20px;	
+}
+.btn-border-custom01{
+	border-radius: 8px;
+}
+.btn-border-custom02{
+	border-radius: 8px;
+	border:solid white;
 }
 .header .btn-solid-lg:hover {
 	border: 1px solid #ffffff;
@@ -563,10 +570,20 @@ input[type='checkbox'] {
 .word {
 	margin: auto;
 	color: white;
-	font-size: smaller;
+	font-size: medium;
+	position: absolute;
+	margin-left: 20px;
+	/* bottom: 20%; */
   }
 .i-am{
-	margin-top: 30px;
+	display: none;
+}
+.my-decs{
+	font-size: 20px;
+	line-height: normal;
+}
+.greeting{
+	font-size: 40px;
 }
   /* Scroller styling */
 .scroller {
@@ -605,12 +622,13 @@ input[type='checkbox'] {
 /*     About     */
 /*****************/
 .basic-1 {
-	padding-top: 7.75rem;
+	padding-top: 60px;
 	padding-bottom: 5.25rem;
 }
 
 .basic-1 .text-container {
 	margin-bottom: 3rem;
+	margin-top: 0px;
 }
 
 .basic-1 .time {
@@ -1041,9 +1059,10 @@ a:hover.back-to-top {
 /*     Media Queries     */
 /*************************/	
 /* Min-width 768px */
+
 @media (min-width: 768px) {
 
-	/* Header */
+	/* Header */	
 	.header {
 		padding-top: 11rem;
 		padding-bottom: 9rem;
@@ -1071,7 +1090,7 @@ a:hover.back-to-top {
 /* Min-width 992px */
 @media (min-width: 992px) {
 	
-	/* General Styles */
+	/* General Styles */	
 	.h2-heading {
 		width: 35.25rem;
 		margin-right: auto;
@@ -1251,6 +1270,18 @@ a:hover.back-to-top {
 /* Min-width 1200px */
 @media (min-width: 1200px) {
 
+		.my-decs{
+		display: none;		
+	}
+	.i-am{
+		display: block;
+	}
+	.word{
+		margin-left: 120px;
+	}
+	.greeting{
+		font-size: 5rem;
+	}
 	/* General Styles */
 	.h1-large {
 		font-size: 3.75rem;

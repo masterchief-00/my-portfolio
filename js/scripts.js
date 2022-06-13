@@ -77,7 +77,7 @@
 
 })(jQuery);
 
-var words = ['Hi, i like HTML', 'I also like CSS', 'and 3D modelling!'],
+var words = ['Hi, i like HTML', 'I also like CSS', 'and 3D modeling!'],
     part,
     i = 0,
     offset = 0,
