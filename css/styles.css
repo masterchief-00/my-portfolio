@@ -385,8 +385,8 @@ input[type='checkbox'] {
 }
 
 .navbar .logo-image img {
-    width: 118px;
-	height: 36px;
+    width: 130px;
+	height: 35px;
 }
 
 .navbar .logo-text {
@@ -622,7 +622,7 @@ input[type='checkbox'] {
 /*     About     */
 /*****************/
 .basic-1 {
-	padding-top: 60px;
+	padding-top: 180px;
 	padding-bottom: 5.25rem;
 }
 
@@ -686,7 +686,7 @@ input[type='checkbox'] {
 /*******************/
 .split .area-1 {
 	height: 430px;
-	background: linear-gradient(to bottom right, rgba(25, 26, 29, 0.5), rgba(25, 26, 29, 0.5)), url('../images/details-background.jpg') center center no-repeat;
+	background: linear-gradient(to bottom right, rgba(25, 26, 29, 0.5), rgba(25, 26, 29, 0.5)), url('../images/me.jpeg') center center no-repeat;
 	background-size: cover;
 }
 
@@ -1059,7 +1059,6 @@ a:hover.back-to-top {
 /*     Media Queries     */
 /*************************/	
 /* Min-width 768px */
-
 @media (min-width: 768px) {
 
 	/* Header */	
