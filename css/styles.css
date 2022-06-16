@@ -534,7 +534,7 @@ input[type='checkbox'] {
 .btn-margin-custom{
 	margin-top: 20px;	
 }
-.btn-border-custom01{
+.border-custom01{
 	border-radius: 8px;
 }
 .btn-border-custom02{
@@ -1202,6 +1202,10 @@ a:hover.back-to-top {
 
 
 	/* Testimonials */
+	.place-logo{
+		height: 150px;
+		margin-left: 0px;
+	}
 	.cards-1 .card {
 		display: inline-block;
 		width: 290px;
@@ -1214,7 +1218,7 @@ a:hover.back-to-top {
 	}
 
 	.cards-1 .card-body {
-		text-align: left;
+		text-align: center;
 	}
 
 	.cards-1 .details {
