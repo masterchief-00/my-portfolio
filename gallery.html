@@ -27,6 +27,7 @@
     <link href="css/fontawesome-all.css" rel="stylesheet">
 	  <link href="css/styles.css" rel="stylesheet">
     <link rel="stylesheet" href="css/album.css">
+    <link rel="stylesheet" href="css/gallery.css">
 	
 	<!-- Favicon  -->
     <link rel="icon" href="images/my-favicon.png">
@@ -104,8 +105,27 @@
     </header> <!-- end of ex-header -->
     <!-- end of header -->    
 
+    <!-- video banner-->
+    <section class="video-container">
+      <!-- <video src="https://player.vimeo.com/external/181445574.hd.mp4?s=d24f32d879305e931468d55e4d7ce6efb5a95c39&amp;profile_id=119" autoplay loop playsinline muted></video> -->
+      <video src="videos/Space float.mp4" autoplay loop playsinline muted></video>
+      <div class="callout">
+        <section class="jumbotron text-center bg-transparent">
+          <div class="container">
+            <h1 class="display-3 text-white" style="text-shadow: 5px 5px 10px black;">Welcome!</h1>
+            <p class="text-white" style="font-size: 1.1em;">Welcome to my gallery, here there is a collection of all render images of any project I have worked on. On every project you can click on it and you will find it's details.</p>
+            <p>
+              <a href="#" class="btn-outline-sm border-custom01 text-white" style="border-color: white; padding: 20px;">Home</a>
+              <a href="#" class="btn-outline-sm border-custom01 text-white" style="border-color: white; padding: 20px;">See developer section</a>
+            </p>
+          </div>
+      </section>        
+      <h1 class="text-muted" style="font-size:11px;">Video from project "Sci-fi Astronaut"</h1>
+      </div>      
+    </section>
+
     <!-- heading words -->
-    <section class="jumbotron text-center">
+    <section id="welcome-text" class="jumbotron text-center">
         <div class="container">
           <h1>Welcome!</h1>
           <p class="text-muted" style="font-size: 1.1em;">Welcome to my gallery, here there is a collection of all render images of any project I have worked on. On every project you can click on it and you will find it's details.</p>
@@ -131,7 +151,7 @@
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
                       <a href="project.html" class="btn btn-sm btn-outline-secondary" style="text-decoration: none;" target="_blank">View</a>
-                      <a href="#" class="btn btn-sm btn-outline-secondary" style="text-decoration: none;" target="_blank">Edit</a>
+                      <a href="#quick-info" class="btn btn-sm btn-outline-secondary" style="text-decoration: none;" data-target="#quick-info" data-toggle="modal">Quick info</a>
                     </div>
                     <small class="text-muted">9 mins</small>
                   </div>
@@ -147,7 +167,7 @@
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
                       <a href="#" class="btn btn-sm btn-outline-secondary" style="text-decoration: none;" target="_blank">View</a>
-                      <a href="#" class="btn btn-sm btn-outline-secondary" style="text-decoration: none;" target="_blank">Edit</a>
+                      <a href="#" class="btn btn-sm btn-outline-secondary" style="text-decoration: none;" target="_blank">Quick info</a>
                     </div>
                     <small class="text-muted">9 mins</small>
                   </div>
@@ -163,56 +183,7 @@
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
                       <a href="#" class="btn btn-sm btn-outline-secondary" style="text-decoration: none;" target="_blank">View</a>
-                      <a href="#" class="btn btn-sm btn-outline-secondary" style="text-decoration: none;" target="_blank">Edit</a>
-                    </div>
-                    <small class="text-muted">9 mins</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-    
-            <div class="col-md-4">
-              <div class="card mb-4 shadow-sm">
-                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-    
-                <div class="card-body">
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <a href="#" class="btn btn-sm btn-outline-secondary" style="text-decoration: none;" target="_blank">View</a>
-                      <a href="#" class="btn btn-sm btn-outline-secondary" style="text-decoration: none;" target="_blank">Edit</a>
-                    </div>
-                    <small class="text-muted">9 mins</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card mb-4 shadow-sm">
-                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-    
-                <div class="card-body">
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <a href="#" class="btn btn-sm btn-outline-secondary" style="text-decoration: none;" target="_blank">View</a>
-                      <a href="#" class="btn btn-sm btn-outline-secondary" style="text-decoration: none;" target="_blank">Edit</a>
-                    </div>
-                    <small class="text-muted">9 mins</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card mb-4 shadow-sm">
-                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-    
-                <div class="card-body">
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <a href="#" class="btn btn-sm btn-outline-secondary" style="text-decoration: none;" target="_blank">View</a>
-                      <a href="#" class="btn btn-sm btn-outline-secondary" style="text-decoration: none;" target="_blank">Edit</a>
+                      <a href="#" class="btn btn-sm btn-outline-secondary" style="text-decoration: none;" target="_blank">Quick info</a>
                     </div>
                     <small class="text-muted">9 mins</small>
                   </div>
@@ -229,7 +200,7 @@
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
                       <a href="#" class="btn btn-sm btn-outline-secondary" style="text-decoration: none;" target="_blank">View</a>
-                      <a href="#" class="btn btn-sm btn-outline-secondary" style="text-decoration: none;" target="_blank">Edit</a>
+                      <a href="#" class="btn btn-sm btn-outline-secondary" style="text-decoration: none;" target="_blank">Quick info</a>
                     </div>
                     <small class="text-muted">9 mins</small>
                   </div>
@@ -245,7 +216,7 @@
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
                       <a href="#" class="btn btn-sm btn-outline-secondary" style="text-decoration: none;" target="_blank">View</a>
-                      <a href="#" class="btn btn-sm btn-outline-secondary" style="text-decoration: none;" target="_blank">Edit</a>
+                      <a href="#" class="btn btn-sm btn-outline-secondary" style="text-decoration: none;" target="_blank">Quick info</a>
                     </div>
                     <small class="text-muted">9 mins</small>
                   </div>
@@ -261,7 +232,56 @@
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
                       <a href="#" class="btn btn-sm btn-outline-secondary" style="text-decoration: none;" target="_blank">View</a>
-                      <a href="#" class="btn btn-sm btn-outline-secondary" style="text-decoration: none;" target="_blank">Edit</a>
+                      <a href="#" class="btn btn-sm btn-outline-secondary" style="text-decoration: none;" target="_blank">Quick info</a>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+    
+                <div class="card-body">
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a href="#" class="btn btn-sm btn-outline-secondary" style="text-decoration: none;" target="_blank">View</a>
+                      <a href="#" class="btn btn-sm btn-outline-secondary" style="text-decoration: none;" target="_blank">Quick info</a>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+    
+                <div class="card-body">
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a href="#" class="btn btn-sm btn-outline-secondary" style="text-decoration: none;" target="_blank">View</a>
+                      <a href="#" class="btn btn-sm btn-outline-secondary" style="text-decoration: none;" target="_blank">Quick info</a>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+    
+                <div class="card-body">
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a href="#" class="btn btn-sm btn-outline-secondary" style="text-decoration: none;" target="_blank">View</a>
+                      <a href="#" class="btn btn-sm btn-outline-secondary" style="text-decoration: none;" target="_blank">Quick info</a>
                     </div>
                     <small class="text-muted">9 mins</small>
                   </div>
@@ -272,6 +292,12 @@
         </div>
       </div>
     <!-- end of gallery -->
+
+    <!-- Scrollable modal -->
+    <div id="quick-info" class="modal-dialog modal-dialog-scrollable">
+      <h1>Hello world!</h1>
+      <p>This modal is under constructio, be patient</p>
+    </div>
 
     <!-- Footer -->
     <div class="footer bg-gray">
