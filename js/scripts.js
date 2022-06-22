@@ -123,3 +123,26 @@ var wordflick = function () {
 $(document).ready(function () {
   wordflick();
 });
+
+//video
+
+  function videoLoader(){
+      var player=document.getElementById('myvideo');
+      var mp4Vid = document.getElementById('mp4source');
+      var info=document.getElementById("info");
+
+      let vid_number=Math.floor(Math.random() * 3);
+      mp4Vid.setAttribute("src","videos/vid"+vid_number+".mp4");
+
+      if(vid_number===0){
+        info.innerHTML="Video from project \"Sci-fi Astronaut\"";
+      }
+      else if(vid_number===1){
+        info.innerHTML="Video from project \"Sci-fi Astronaut\"";
+      }
+      else if(vid_number===2){
+        info.innerHTML="Video from project \"Planet Scene\"";
+      }
+      player.load();
+      player.play();
+   }
