@@ -184,18 +184,19 @@
             <div class="container-fluid pt-4 px-4">
                 <div class="row g-4">
                     <div class="col-sm-12 col-xl-6">
-                        <div class="bg-secondary rounded h-100 p-4">
-                            <h6 class="mb-4">Single Line Chart</h6>
+                        <div class="bg-secondary text-center rounded p-4">
+                            <div class="d-flex align-items-center justify-content-between mb-4">
+                                <h6 class="mb-0">Uploads</h6>                                
+                            </div>
                             <canvas id="line-chart"></canvas>
                         </div>
                     </div>
                     <div class="col-sm-12 col-xl-6">
                         <div class="bg-secondary text-center rounded p-4">
                             <div class="d-flex align-items-center justify-content-between mb-4">
-                                <h6 class="mb-0">Salse & Revenue</h6>
-                                <a href="" class="text-primary">Show All</a>
+                                <h6 class="mb-0">Projects</h6>                                
                             </div>
-                            <canvas id="pie-chart"></canvas>
+                            <canvas id="pie-chart" style="max-height: 232px;"></canvas>
                         </div>
                     </div>
                 </div>
@@ -203,18 +204,16 @@
             <!-- Sales Chart End -->
 
 
-            <!-- Recent Sales Start -->
+            <!-- Recent uploads Start -->
             <div class="container-fluid pt-4 px-4">
                 <div class="bg-secondary text-center rounded p-4">
                     <div class="d-flex align-items-center justify-content-between mb-4">
-                        <h6 class="mb-0">Recent Uploads</h6>
-                        <a href="" class="text-primary">Show All</a>
+                        <h6 class="mb-0">Recent Uploads</h6>                        
                     </div>
                     <div class="table-responsive">
                         <table class="table text-start align-middle table-bordered table-hover mb-0">
                             <thead>
-                                <tr class="text-white">
-                                    <th scope="col"><input class="form-check-input" type="checkbox"></th>
+                                <tr class="text-white">                                    
                                     <th scope="col">Date</th>
                                     <th scope="col">Title</th>
                                     <th scope="col">Type</th>
@@ -224,58 +223,190 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <td><input class="form-check-input" type="checkbox"></td>
+                                <tr>                                    
                                     <td>01 Jan 2045</td>
                                     <td>Scifi Astronaut</td>
                                     <td>3D</td>
                                     <td>CGI</td>
                                     <td>Fine</td>
-                                    <td><a class="btn btn-sm btn-primary" href="">Detail</a></td>
+                                    <td class="text-center"><a class="btn btn-sm btn-primary" href="">Detail</a></td>
                                 </tr>
-                                <tr>
-                                    <td><input class="form-check-input" type="checkbox"></td>
+                                <tr>                                    
                                     <td>01 Jan 2045</td>
                                     <td>Vulcan skull</td>
                                     <td>3D</td>
                                     <td>3D Printing</td>
                                     <td>Fine</td>
-                                    <td><a class="btn btn-sm btn-primary" href="">Detail</a></td>
+                                    <td class="text-center"><a class="btn btn-sm btn-primary" href="">Detail</a></td>
                                 </tr>
-                                <tr>
-                                    <td><input class="form-check-input" type="checkbox"></td>
+                                <tr>                                    
                                     <td>01 Jan 2045</td>
                                     <td>Bus system</td>
                                     <td>Coding</td>
                                     <td>-</td>
                                     <td>Fine</td>
-                                    <td><a class="btn btn-sm btn-primary" href="">Detail</a></td>
+                                    <td class="text-center"><a class="btn btn-sm btn-primary" href="">Detail</a></td>
                                 </tr>
-                                <tr>
-                                    <td><input class="form-check-input" type="checkbox"></td>
+                                <tr>                                    
                                     <td>01 Jan 2045</td>
                                     <td>Mad Max</td>
                                     <td>3D</td>
                                     <td>CGI</td>
                                     <td>Fine</td>
-                                    <td><a class="btn btn-sm btn-primary" href="">Detail</a></td>
+                                    <td class="text-center"><a class="btn btn-sm btn-primary" href="">Detail</a></td>
                                 </tr>
-                                <tr>
-                                    <td><input class="form-check-input" type="checkbox"></td>
+                                <tr>                                    
                                     <td>01 Jan 2045</td>
                                     <td>Planetary Scene</td>
                                     <td>3D</td>
                                     <td>CGI</td>
                                     <td>Pending</td>
-                                    <td><a class="btn btn-sm btn-primary" href="">Detail</a></td>
+                                    <td class="text-center"><a class="btn btn-sm btn-primary" href="">Detail</a></td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
                 </div>
             </div>
-            <!-- Recent Sales End -->
+            <!-- Recent uploads End -->
 
+            <!--all 3d projects-->
+            <div class="container-fluid pt-4 px-4">
+                <div class="bg-secondary text-center rounded p-4">
+                    <div class="d-flex align-items-center justify-content-between mb-4">
+                        <h6 class="mb-0">3D Projects</h6>                        
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table text-start align-middle table-bordered table-hover mb-0">
+                            <thead>
+                                <tr class="text-white">                                    
+                                    <th scope="col">Date</th>
+                                    <th scope="col">Title</th>                                    
+                                    <th scope="col">Purpose</th>
+                                    <th scope="col">Status</th>
+                                    <th scope="col">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>                                    
+                                    <td>01 Jan 2045</td>
+                                    <td>Scifi Astronaut</td>                                    
+                                    <td>CGI</td>
+                                    <td>Fine</td>
+                                    <td class="text-center"  colspan="2">
+                                        <button type="button" class="btn btn-square btn-outline-info m-2"><i class="fa fa-edit"></i></button>
+                                        <button type="button" class="btn btn-square btn-outline-warning m-2"><i class="fa fa-star"></i></button>
+                                        <button type="button" class="btn btn-square btn-outline-danger"><i class="fa fa-trash"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>                                    
+                                    <td>01 Jan 2045</td>
+                                    <td>Vulcan skull</td>                                    
+                                    <td>3D Printing</td>
+                                    <td>Fine</td>
+                                    <td class="text-center"  colspan="2">
+                                        <button type="button" class="btn btn-square btn-outline-info m-2"><i class="fa fa-edit"></i></button>
+                                        <button type="button" class="btn btn-square btn-outline-warning m-2"><i class="fa fa-star"></i></button>
+                                        <button type="button" class="btn btn-square btn-outline-danger"><i class="fa fa-trash"></i></button>
+                                    </td>
+                                </tr>                                
+                                <tr>                                    
+                                    <td>01 Jan 2045</td>
+                                    <td>Mad Max</td>                                    
+                                    <td>CGI</td>
+                                    <td>Fine</td>
+                                    <td class="text-center"  colspan="2">
+                                        <button type="button" class="btn btn-square btn-outline-info m-2"><i class="fa fa-edit"></i></button>
+                                        <button type="button" class="btn btn-square btn-outline-warning m-2"><i class="fa fa-star"></i></button>
+                                        <button type="button" class="btn btn-square btn-outline-danger"><i class="fa fa-trash"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>                                    
+                                    <td>01 Jan 2045</td>
+                                    <td>Planetary Scene</td>                                    
+                                    <td>CGI</td>
+                                    <td>Pending</td>
+                                    <td class="text-center"  colspan="2">                                        
+                                        <button type="button" class="btn btn-square btn-outline-info m-2"><i class="fa fa-edit"></i></button>
+                                        <button type="button" class="btn btn-square btn-outline-warning m-2"><i class="fa fa-star"></i></button>
+                                        <button type="button" class="btn btn-square btn-outline-danger"><i class="fa fa-trash"></i></button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <!--end of 3d projects-->
+
+            <!--all coding projects-->
+            <div class="container-fluid pt-4 px-4">
+                <div class="bg-secondary text-center rounded p-4">
+                    <div class="d-flex align-items-center justify-content-between mb-4">
+                        <h6 class="mb-0">Coding Projects</h6>                        
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table text-start align-middle table-bordered table-hover mb-0">
+                            <thead>
+                                <tr class="text-white">                                    
+                                    <th scope="col">Date</th>
+                                    <th scope="col">Title</th>                                    
+                                    <th scope="col">Purpose</th>
+                                    <th scope="col">Status</th>
+                                    <th scope="col">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>                                    
+                                    <td>01 Jan 2045</td>
+                                    <td>Scifi Astronaut</td>                                    
+                                    <td>CGI</td>
+                                    <td>Fine</td>
+                                    <td class="text-center"  colspan="2">
+                                        <button type="button" class="btn btn-square btn-outline-info m-2"><i class="fa fa-edit"></i></button>
+                                        <button type="button" class="btn btn-square btn-outline-warning m-2"><i class="fa fa-star"></i></button>
+                                        <button type="button" class="btn btn-square btn-outline-danger"><i class="fa fa-trash"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>                                    
+                                    <td>01 Jan 2045</td>
+                                    <td>Vulcan skull</td>                                    
+                                    <td>3D Printing</td>
+                                    <td>Fine</td>
+                                    <td class="text-center"  colspan="2">
+                                        <button type="button" class="btn btn-square btn-outline-info m-2"><i class="fa fa-edit"></i></button>
+                                        <button type="button" class="btn btn-square btn-outline-warning m-2"><i class="fa fa-star"></i></button>
+                                        <button type="button" class="btn btn-square btn-outline-danger"><i class="fa fa-trash"></i></button>
+                                    </td>
+                                </tr>                                
+                                <tr>                                    
+                                    <td>01 Jan 2045</td>
+                                    <td>Mad Max</td>                                    
+                                    <td>CGI</td>
+                                    <td>Fine</td>
+                                    <td class="text-center"  colspan="2">
+                                        <button type="button" class="btn btn-square btn-outline-info m-2"><i class="fa fa-edit"></i></button>
+                                        <button type="button" class="btn btn-square btn-outline-warning m-2"><i class="fa fa-star"></i></button>
+                                        <button type="button" class="btn btn-square btn-outline-danger"><i class="fa fa-trash"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>                                    
+                                    <td>01 Jan 2045</td>
+                                    <td>Planetary Scene</td>                                    
+                                    <td>CGI</td>
+                                    <td>Pending</td>
+                                    <td class="text-center"  colspan="2">                                        
+                                        <button type="button" class="btn btn-square btn-outline-info m-2"><i class="fa fa-edit"></i></button>
+                                        <button type="button" class="btn btn-square btn-outline-warning m-2"><i class="fa fa-star"></i></button>
+                                        <button type="button" class="btn btn-square btn-outline-danger"><i class="fa fa-trash"></i></button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <!--end of coding projects-->
 
             <!-- Widgets Start -->
             <div class="container-fluid pt-4 px-4">
@@ -431,6 +562,8 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script src="js/linechart.js"></script>
+    <script src="js/piechart.js"></script>
 </body>
 
 </html>
