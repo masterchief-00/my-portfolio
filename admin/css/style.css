@@ -6,11 +6,11 @@
     --light: #6C7293;
     --dark: #000000;
 }
-.modal-body::-webkit-scrollbar{
+*::-webkit-scrollbar{
     width: 0.4em;
     background-color: var(--secondary);
 }
-.modal-body::-webkit-scrollbar-thumb{
+*::-webkit-scrollbar-thumb{
     background-color: var(--primary);
     border-radius: 5px;
 }

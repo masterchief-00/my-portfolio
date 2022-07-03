@@ -33,7 +33,14 @@ Colors:
 /**************************/
 /*     General Styles     */
 /**************************/
-
+*::-webkit-scrollbar{
+    width: 0.6em;
+    background-color: rgb(255, 255, 255);
+}
+*::-webkit-scrollbar-thumb{
+    background-color: #0b36a8;
+    border-radius: 5px;
+}
 body,
 html {
     width: 100%;
