@@ -224,9 +224,9 @@
                                 <img class="rounded-circle flex-shrink-0" src="../user/images/details-icon-illustrator.png" alt="" style="width: 40px; height: 40px;">
                                 <div class="w-100 ms-3">
                                     <div class="d-flex w-100 justify-content-between">
-                                        <h6 class="mb-0">Jhon Doe</h6>                                        
+                                        <h6 class="mb-0">Adobe Illustrator</h6>                                        
                                     </div>
-                                    <span>Used in animation</span>
+                                    <span>Used in Illustrating 2D graphics</span>
                                 </div>
                             </div>                            
                         </div>
@@ -238,7 +238,7 @@
                                 <h6 class="mb-0">All export formats</h6>                                
                             </div>
                             <div class="d-flex align-items-center border-bottom py-3">
-                                <img class="rounded-circle flex-shrink-0" src="../user/images/details-icon-blender.png" alt="" style="width: 40px; height: 40px;">
+                                <img class="rounded-circle flex-shrink-0" src="../user/images/fbx.jpg" alt="" style="width: 40px; height: 40px;">
                                 <div class="w-100 ms-3">
                                     <div class="d-flex w-100 justify-content-between">
                                         <h6 class="mb-0">FBX</h6>                                        
@@ -256,7 +256,7 @@
                                 </div>
                             </div>
                             <div class="d-flex align-items-center border-bottom py-3">
-                                <img class="rounded-circle flex-shrink-0" src="../user/images/details-icon-gimp.png" alt="" style="width: 40px; height: 40px;">
+                                <img class="rounded-circle flex-shrink-0" src="../user/images/obj.png" alt="" style="width: 40px; height: 40px;">
                                 <div class="w-100 ms-3">
                                     <div class="d-flex w-100 justify-content-between">
                                         <h6 class="mb-0">OBJ</h6>                                        
@@ -265,7 +265,7 @@
                                 </div>
                             </div>
                             <div class="d-flex align-items-center pt-3">
-                                <img class="rounded-circle flex-shrink-0" src="../user/images/details-icon-illustrator.png" alt="" style="width: 40px; height: 40px;">
+                                <img class="rounded-circle flex-shrink-0" src="../user/images/dae.jpg" alt="" style="width: 40px; height: 40px;">
                                 <div class="w-100 ms-3">
                                     <div class="d-flex w-100 justify-content-between">
                                         <h6 class="mb-0">DAE</h6>                                        
@@ -275,8 +275,100 @@
                             </div>                            
                         </div>
                     </div>
+
+                    <div class="col-sm-12 col-md-6 col-xl-4">
+                        <div class="h-100 bg-secondary rounded p-4">
+                            <div class="d-flex align-items-center justify-content-between mb-2">
+                                <h6 class="mb-0">Add new</h6>                                
+                            </div>                    
+                            <div class="text-center" style="margin-top: 50px;">
+                                <a href="#tool-form" class="btn btn-lg btn-primary m-2" data-bs-toggle="modal">Add New Tool/Software</a>
+                                <hr class="bg-primary">    
+                                <a href="#format-form" class="btn btn-lg btn-primary m-2" data-bs-toggle="modal">Add New Export Format</a>
+                            </div>
+                                                    
+                        </div>                                               
+                    </div>
                 </div>
             </div>
+
+            <!--tool modal-->
+            <div class="modal fade" id="tool-form" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                  <div class="modal-content bg-secondary rounded-top">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Add new tool</h5>
+                      <button type="button" class="bg-secondary rounded text-white close" data-bs-dismiss="modal" aria-label="Close" style="border-color: white !important">
+                        <span class="text-white" aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <section>
+                        <div class="container">
+                          <div class="row">
+                            <div class="col-ld-12">
+                                <div class="bg-secondary rounded h-100 p-4">                                    
+                                    <form>
+                                        <div class="form-floating mb-3">
+                                            <input type="text" class="form-control" id="floatingInput"
+                                                placeholder="eg:Photoshop">
+                                            <label for="floatingInput">software Name</label>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="formFile" class="form-label">Icon</label>
+                                            <input class="form-control bg-dark" type="file" id="formFile">
+                                        </div>                     
+                                        <button type="submit" class="btn btn-primary">Add</button>
+                                    </form>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                      </section>
+                    </div>                    
+                  </div>
+                </div>
+            </div>
+            <!--tool modal ends-->
+
+            <!--format modal-->
+            <div class="modal fade" id="format-form" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                  <div class="modal-content bg-secondary rounded-top">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Add new format</h5>
+                      <button type="button" class="bg-secondary rounded text-white close" data-bs-dismiss="modal" aria-label="Close" style="border-color: white !important">
+                        <span class="text-white" aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <section>
+                        <div class="container">
+                          <div class="row">
+                            <div class="col-ld-12">
+                                <div class="bg-secondary rounded h-100 p-4">                                    
+                                    <form>
+                                        <div class="form-floating mb-3">
+                                            <input type="text" class="form-control" id="floatingInput"
+                                                placeholder="eg:FBX">
+                                            <label for="floatingInput">Name | abbreviation</label>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="formFile" class="form-label">Icon</label>
+                                            <input class="form-control bg-dark" type="file" id="formFile">
+                                        </div>                     
+                                        <button type="submit" class="btn btn-primary">Add</button>
+                                    </form>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                      </section>
+                    </div>                    
+                  </div>
+                </div>
+            </div>
+            <!--format modal ends-->
 
             <!-- Footer Start -->
             <div class="container-fluid pt-4 px-4">
