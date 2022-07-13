@@ -1,0 +1,148 @@
+/* Description: Custom JS file */
+
+
+(function($) {
+    "use strict"; 
+	
+    /* Navbar Scripts */
+    // jQuery to collapse the navbar on scroll
+    $(window).on('scroll load', function() {
+		if ($(".navbar").offset().top > 60) {
+			$(".fixed-top").addClass("top-nav-collapse");
+		} else {
+			$(".fixed-top").removeClass("top-nav-collapse");
+		}
+    });
+    
+	// jQuery for page scrolling feature - requires jQuery Easing plugin
+	$(function() {
+		$(document).on('click', 'a.page-scroll', function(event) {
+			var $anchor = $(this);
+			$('html, body').stop().animate({
+				scrollTop: $($anchor.attr('href')).offset().top
+			}, 600, 'easeInOutExpo');
+			event.preventDefault();
+		});
+    });
+
+    // offcanvas script from Bootstrap + added element to close menu on click in small viewport
+    $('[data-toggle="offcanvas"], .navbar-nav li a:not(.dropdown-toggle').on('click', function () {
+        $('.offcanvas-collapse').toggleClass('open')
+    })
+
+    // hover in desktop mode
+    function toggleDropdown (e) {
+        const _d = $(e.target).closest('.dropdown'),
+            _m = $('.dropdown-menu', _d);
+        setTimeout(function(){
+            const shouldOpen = e.type !== 'click' && _d.is(':hover');
+            _m.toggleClass('show', shouldOpen);
+            _d.toggleClass('show', shouldOpen);
+            $('[data-toggle="dropdown"]', _d).attr('aria-expanded', shouldOpen);
+        }, e.type === 'mouseleave' ? 300 : 0);
+    }
+    $('body')
+    .on('mouseenter mouseleave','.dropdown',toggleDropdown)
+    .on('click', '.dropdown-menu a', toggleDropdown);
+
+
+    /* Move Form Fields Label When User Types */
+    // for input and textarea fields
+    $("input, textarea").keyup(function(){
+		if ($(this).val() != '') {
+			$(this).addClass('notEmpty');
+		} else {
+			$(this).removeClass('notEmpty');
+		}
+	});
+	
+
+    /* Back To Top Button */
+    // create the back to top button
+    $('body').prepend('<a href="body" class="back-to-top page-scroll">Back to Top</a>');
+    var amountScrolled = 700;
+    $(window).scroll(function() {
+        if ($(window).scrollTop() > amountScrolled) {
+            $('a.back-to-top').fadeIn('500');
+        } else {
+            $('a.back-to-top').fadeOut('500');
+        }
+    });
+
+
+	/* Removes Long Focus On Buttons */
+	$(".button, a, button").mouseup(function() {
+		$(this).blur();
+	});
+
+})(jQuery);
+
+var words = ['Hi, i like HTML', 'I also like CSS', 'and 3D modeling!'],
+    part,
+    i = 0,
+    offset = 0,
+    len = words.length,
+    forwards = true,
+    skip_count = 0,
+    skip_delay = 15,
+    speed = 70;
+var wordflick = function () {
+  setInterval(function () {
+    if (forwards) {
+      if (offset >= words[i].length) {
+        ++skip_count;
+        if (skip_count == skip_delay) {
+          forwards = false;
+          skip_count = 0;
+        }
+      }
+    }
+    else {
+      if (offset == 0) {
+        forwards = true;
+        i++;
+        offset = 0;
+        if (i >= len) {
+          i = 0;
+        }
+      }
+    }
+    part = words[i].substr(0, offset);
+    if (skip_count == 0) {
+      if (forwards) {
+        offset++;
+      }
+      else {
+        offset--;
+      }
+    }
+    $('.word').text(part);
+  },speed);
+};
+
+$(document).ready(function () {
+  wordflick();
+});
+
+//video
+
+  function videoLoader(){
+      var player=document.getElementById('myvideo');
+      var mp4Vid = document.getElementById('mp4source');
+      var info=document.getElementById("info");
+
+      let vid_number=Math.floor(Math.random() * 3);
+      mp4Vid.setAttribute("src","videos/vid"+vid_number+".mp4");
+
+      if(vid_number===0){
+        info.innerHTML="Video from project \"Sci-fi Astronaut\"";
+      }
+      else if(vid_number===1){
+        info.innerHTML="Video from project \"Sci-fi Astronaut\"";
+      }
+      else if(vid_number===2){
+        info.innerHTML="Video from project \"Planet Scene\"";
+      }
+      player.load();
+      player.play();
+   }
